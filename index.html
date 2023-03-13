@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!-- style sheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="container">
+        <div class="logo">
+          <button class="menu">
+            <img src="./images/icon-menu.svg" alt="menu">
+          </button>
+          <img class = "logo_img" src="./images/logo.svg" alt="logo">
+          <ul class = "l">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="user">
+          <button class = "buying_car">
+            <img src="./images/icon-cart.svg" alt="buying car">
+          </button>
+          <span class = "buying_number"></span>
+          <img src="./images/image-avatar.png" alt="user image">
+        </div>
+        <div class="user_boughts" style ="display: none;">
+          <p class = "c">Cart</p>
+          <p class = "empty">Your cart is empty</p>
+        </div>
+      </div>
+      <div class="backdrop2"  style="display: none;"></div>
+      <div class="menu_m" style="display: none;">
+        <ul>
+          <img src="./images/icon-close.svg" alt="close" class="menu-c">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="pro_imgs">
+        <img src="./images/image-product-1.jpg" alt="product photo" class="bigger_image">
+        <div class="small">
+            <div><img src="./images/image-product-1-thumbnail.jpg" alt="product thumbnail" class ="product_ph_1 active"></div>
+            <div><img src="./images/image-product-2-thumbnail.jpg" alt="product thumbnail"></div>
+            <div><img src="./images/image-product-3-thumbnail.jpg" alt="product thumbnail"></div>
+            <div><img src="./images/image-product-4-thumbnail.jpg" alt="product thumbnail"></div>
+        </div>
+        <div class="moves2">
+          <button class="prev">
+            <img src="./images/icon-previous.svg" alt="prev">
+          </button>
+          <button  class ="next">
+            <img src="./images/icon-next.svg" alt="next">
+          </button>
+        </div>
+    </div>
+    <div class="info">
+      <p class = "company">Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class = "desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="parent-price">
+          <div class="price">
+            <h2>$125.00</h2>
+            <p>50%</p>
+          </div>
+          <p class = "before-price">$250.00</p>
+        </div>
+        <div class="add">
+          <div class="number">
+            <button class = "minus">
+              <img src="./images/icon-minus.svg" alt="minus">
+            </button>
+            <p>0</p>
+            <button  class = "plus">
+              <img src="./images/icon-plus.svg" alt="plus">
+            </button>
+          </div>
+          <button class = "btn_add"><img src="./images/icon-cart.svg" alt="buying car"> Add to cart
+          <span class="after"></span>
+          <span class="before"></span>
+          </button>
+        </div>
+    </div>
+    </div>
+  </main>
+  <div class="backdrop" style="display: none;"></div>
+  <div class="bigger_click" style="display: none;">
+    <div class="pro_imgs2">
+      <img src="./images/image-product-1.jpg" alt="product photo" class="bigger_image2">
+      <div class="small">
+          <div><img src="./images/image-product-1-thumbnail.jpg" alt="product thumbnail" class ="product_ph_1 active" data-number = "1"></div>
+          <div><img src="./images/image-product-2-thumbnail.jpg" alt="product thumbnail" data-number="2"></div>
+          <div><img src="./images/image-product-3-thumbnail.jpg" alt="product thumbnail" data-number="3"></div>
+          <div><img src="./images/image-product-4-thumbnail.jpg" alt="product thumbnail" data-number="4"></div>
+      </div>
+      <div class = "close">
+        <img src="./images/icon-close.svg" alt="close" class = "close_btn">
+      </div> 
+      <div class="moves">
+        <button class="prev">
+          <img src="./images/icon-previous.svg" alt="prev">
+        </button>
+        <button class ="next">
+          <img src="./images/icon-next.svg" alt="next">
+        </button>
+      </div>
+  </div> 
+</div>
+<!-- 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+</html>
